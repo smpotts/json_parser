@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
+
 /**
  * The Controller.
  */
@@ -17,7 +19,8 @@ public class JsonParserController {
     RecordService recordService;
 
     @GetMapping
-    public String results() {
-        return recordService.calculateAvgValue();
+    public String results() throws IOException {
+        recordService.parseJson();
+        return recordService.calculateSumValue();
     }
 }

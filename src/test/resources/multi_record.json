@@ -1,0 +1,17 @@
+[
+  {
+    "timestamp": 1609516058,
+    "category": "A",
+    "value": 12.345
+  },
+  {
+    "timestamp": 1609516064,
+    "category": "B",
+    "value": 1.022
+  },
+  {
+    "timestamp": 1609516089,
+    "category": "C",
+    "value": 252.732
+  }
+]
